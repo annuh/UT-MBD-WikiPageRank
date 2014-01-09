@@ -1,0 +1,26 @@
+register /home/participant/git/commoncrawl-examples/lib/*.jar; 
+
+register /home/participant/git/commoncrawl-examples/dist/lib/commoncrawl-examples-1.0.1.jar;
+
+a = LOAD '/home/participant/data/*.arc.gz' USING org.commoncrawl.pig.ArcLoader() as (date, length:int, type, statuscode, ipaddress, url:chararray, html);
+log = FILTER a by (length >= 5000);
+log1 = FOREACH log GENERATE url, length;
+
+b = LOAD 'languages.dat' as (url:chararray, language:chararray);
+dutch = FILTER b by (language == 'nl');
+
+c = JOIN log1 BY url, dutch BY url;
+d = FOREACH c GENERATE $0, $1;
+dump d;
+
+
+
+--pages = foreach combined generate $0;
+--dump pages;
+
+--websites = FILTER a by (date matches 'Thu Feb 09 06:03:.*');
+
+--dates = GROUP websites by date;
+--cntd = foreach dates generate $0, SUM($1.length) as data; 
+
+--dump cntd;
