@@ -30,25 +30,5 @@
 			<type>2</type>
 			<location>/home/participant/git/commoncrawl-examples/${classpath}</location>
 		</link>
-		<link>
-			<name>README.html</name>
-			<type>1</type>
-			<location>/home/participant/git/commoncrawl-examples/README.html</location>
-		</link>
-		<link>
-			<name>build</name>
-			<type>2</type>
-			<location>/home/participant/git/commoncrawl-examples/build</location>
-		</link>
-		<link>
-			<name>build.xml</name>
-			<type>1</type>
-			<location>/home/participant/git/commoncrawl-examples/build.xml</location>
-		</link>
-		<link>
-			<name>java</name>
-			<type>2</type>
-			<location>/home/participant/git/commoncrawl-examples/src/java</location>
-		</link>
 	</linkedResources>
 </projectDescription>

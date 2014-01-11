@@ -3,6 +3,7 @@ package org.commoncrawl.hadoop.mapred;
 import java.io.EOFException;
 import java.io.IOException;
 
+
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
@@ -14,7 +15,7 @@ import org.apache.hadoop.mapreduce.TaskAttemptContext;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import org.apache.hadoop.util.ReflectionUtils;
 import org.apache.log4j.Logger;
-import org.commoncrawl.compressors.gzip.GzipCompressorInputStream;
+import org.commoncrawl.hadoop.compressors.gzip.GzipCompressorInputStream;
 
 /**
  * Reads ARC records.
