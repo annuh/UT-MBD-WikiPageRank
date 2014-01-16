@@ -24,11 +24,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>${classpath}</name>
-			<type>2</type>
-			<location>/home/participant/git/commoncrawl-examples/${classpath}</location>
-		</link>
-	</linkedResources>
 </projectDescription>
